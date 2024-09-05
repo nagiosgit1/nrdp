@@ -222,7 +222,9 @@ function nrdp_write_check_output_to_cmd($hostname, $servicename, $state, $output
     $check_result_contents .= "early_timeout=0\n";
     $check_result_contents .= "exited_ok=1\n";
     $check_result_contents .= "return_code={$state}\n";
-    $check_result_contents .= "output=${output}\\n\n";
+    $check_result_contents .= "output={$output}\\n\n";
+
+    $check_result_contents = str_replace("\t", " ", $check_result_contents);
 
     // put check result into the check file
     file_put_contents($check_file, $check_result_contents);

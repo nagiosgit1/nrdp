@@ -1,6 +1,11 @@
-2.0.6 - ??/??/2021
+2.0.7 - ??/??/20??
 ------------------
 - Fixed service check timed out after 0.00 seconds on Naemon installations (#61) (ccztux)
+
+2.0.6 - 08/01/2024
+------------------
+- Make sure tabs aren't mistakenly added to the output file of nrdp_write_check_output_to_cmd - (tsadpbb)
+- Fixes for deprecations in PHP 8.2
 
 2.0.5 - 10/14/2021
 ------------------
